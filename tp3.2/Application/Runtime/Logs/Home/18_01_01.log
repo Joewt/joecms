@@ -1,0 +1,63 @@
+[ 2018-01-01T10:46:22+08:00 ] ::1 /index.php?c=index&a=getCount
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004143s ]
+NOTIC: [2] Declaration of Home\Controller\CommonController::error($message = '') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /Users/joe/Desktop/joecms/Application/Home/Controller/CommonController.class.php 第 26 行.
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('0','30')  [ RunTime:0.0114s ]
+
+[ 2018-01-01T10:48:35+08:00 ] ::1 /index.php?c=index&a=getCount
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+NOTIC: [2] Declaration of Home\Controller\CommonController::error($message = '') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /Users/joe/Desktop/joecms/Application/Home/Controller/CommonController.class.php 第 26 行.
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('0','30')  [ RunTime:0.0003s ]
+
+[ 2018-01-01T10:48:57+08:00 ] ::1 /index.php?c=index&a=getCount
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+NOTIC: [2] Declaration of Home\Controller\CommonController::error($message = '') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /Users/joe/Desktop/joecms/Application/Home/Controller/CommonController.class.php 第 26 行.
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('0','30')  [ RunTime:0.0026s ]
+
+[ 2018-01-01T10:51:30+08:00 ] ::1 /index.php?c=index&a=getCount
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+NOTIC: [2] Declaration of Home\Controller\CommonController::error($message = '') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /Users/joe/Desktop/joecms/Application/Home/Controller/CommonController.class.php 第 26 行.
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('0','30')  [ RunTime:0.0006s ]
+
+[ 2018-01-01T10:51:42+08:00 ] ::1 /index.php?c=index&a=getCount
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+NOTIC: [2] Declaration of Home\Controller\CommonController::error($message = '') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /Users/joe/Desktop/joecms/Application/Home/Controller/CommonController.class.php 第 26 行.
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('0','30')  [ RunTime:0.0003s ]
+
+[ 2018-01-01T14:06:31+08:00 ] ::1 /index.php?c=index&a=getCount
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002127s ]
+NOTIC: [2] Declaration of Home\Controller\CommonController::error($message = '') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /Users/joe/Desktop/joecms/Application/Home/Controller/CommonController.class.php 第 29 行.
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/NewsModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('0','30')  [ RunTime:0.0043s ]
+
+[ 2018-01-01T21:33:17+08:00 ] ::1 /index.php?c=index&a=getCount
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003760s ]
+NOTIC: [2] Declaration of Home\Controller\CommonController::error($message = '') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /Users/joe/Desktop/joecms/Application/Home/Controller/CommonController.class.php 第 29 行.
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/NewsModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('0','30')  [ RunTime:0.0039s ]
+

@@ -1,0 +1,245 @@
+[ 2017-12-23T19:55:29+08:00 ] ::1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-23T19:56:09+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+NOTIC: [8] Undefined index: news_id /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/ContentController.class.php 第 69 行.
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0099s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('lalalalalallalal','test','/upload/2017/12/23/5a3e44452d9ed.jpg','#ed568b','8','0','test','test','1514030169','admin') [ RunTime:0.0185s ]
+NOTIC: [2] Declaration of Common\Model\NewsContentModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsContentModel.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0034s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('sdfsf&lt;img src=&quot;/upload/2017/12/23/5a3e4452463ee.png&quot; alt=&quot;&quot; /&gt;','29','1514030169') [ RunTime:0.0016s ]
+
+[ 2017-12-23T20:09:10+08:00 ] ::1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0040s ]
+SQL: UPDATE `cms_news` SET `status`='-1' WHERE ( news_id=27 ) [ RunTime:0.0035s ]
+
+[ 2017-12-23T20:25:30+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0043s ]
+SQL: UPDATE `cms_news` SET `title`='lalalalala',`small_title`='test',`thumb`='/upload/2017/12/23/5a3e44452d9ed.jpg',`title_font_color`='#ed568b',`catid`='3',`copyfrom`='0',`description`='test',`keywords`='test' WHERE ( news_id=29 ) [ RunTime:0.0025s ]
+NOTIC: [2] Declaration of Common\Model\NewsContentModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsContentModel.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0038s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsContentModel.class.php 第 33 行.
+SQL: UPDATE `cms_news_content` SET `content`='sdfsf&lt;img src=&quot;/upload/2017/12/23/5a3e4452463ee.png&quot; alt=&quot;&quot; /&gt;' WHERE ( news_id=29 ) [ RunTime:0.0016s ]
+
+[ 2017-12-23T20:55:12+08:00 ] ::1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0055s ]
+SQL: UPDATE `cms_news` SET `status`='0' WHERE ( news_id=17 ) [ RunTime:0.0021s ]
+
+[ 2017-12-23T20:55:17+08:00 ] ::1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0039s ]
+SQL: UPDATE `cms_news` SET `status`='1' WHERE ( news_id=17 ) [ RunTime:0.0004s ]
+
+[ 2017-12-23T21:12:09+08:00 ] ::1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004119s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0066s ]
+SQL: UPDATE `cms_news` SET `listorder`='1' WHERE ( news_id=23 ) [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/ContentController.class.php 第 177 行.
+SQL: UPDATE `cms_news` SET `listorder`='1' WHERE ( news_id=17 ) [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: id /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/ContentController.class.php 第 177 行.
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=29 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/ContentController.class.php 第 177 行.
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=28 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/ContentController.class.php 第 177 行.
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=25 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/ContentController.class.php 第 177 行.
+
+[ 2017-12-23T21:12:27+08:00 ] ::1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0037s ]
+SQL: UPDATE `cms_news` SET `listorder`='2' WHERE ( news_id=24 ) [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: id /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/ContentController.class.php 第 177 行.
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=22 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/ContentController.class.php 第 177 行.
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=21 ) [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/ContentController.class.php 第 177 行.
+
+[ 2017-12-23T21:12:52+08:00 ] ::1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0047s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=25 ) [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: id /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/ContentController.class.php 第 177 行.
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=22 ) [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/ContentController.class.php 第 177 行.
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=21 ) [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/ContentController.class.php 第 177 行.
+
+[ 2017-12-23T21:15:42+08:00 ] ::1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+
+[ 2017-12-23T21:15:58+08:00 ] ::1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002590s ]
+
+[ 2017-12-23T21:16:03+08:00 ] ::1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+
+[ 2017-12-23T21:16:52+08:00 ] ::1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003953s ]
+
+[ 2017-12-23T21:16:58+08:00 ] ::1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+
+[ 2017-12-23T21:16:58+08:00 ] ::1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+
+[ 2017-12-23T21:16:59+08:00 ] ::1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+
+[ 2017-12-23T21:16:59+08:00 ] ::1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001397s ]
+
+[ 2017-12-23T21:17:15+08:00 ] ::1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002009s ]
+
+[ 2017-12-23T21:17:24+08:00 ] ::1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+
+[ 2017-12-23T21:18:17+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+NOTIC: [2] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/MenuModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0035s ]
+SQL: UPDATE `cms_menu` SET `listorder`='9' WHERE ( menu_id=6 ) [ RunTime:0.0022s ]
+SQL: UPDATE `cms_menu` SET `listorder`='4' WHERE ( menu_id=9 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0003s ]
+
+[ 2017-12-23T21:19:46+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001338s ]
+NOTIC: [2] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/MenuModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0038s ]
+SQL: UPDATE `cms_menu` SET `listorder`='9' WHERE ( menu_id=6 ) [ RunTime:0.0015s ]
+SQL: UPDATE `cms_menu` SET `listorder`='4' WHERE ( menu_id=9 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0003s ]
+
+[ 2017-12-23T21:19:52+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+NOTIC: [2] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/MenuModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+SQL: UPDATE `cms_menu` SET `listorder`='9' WHERE ( menu_id=6 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='4' WHERE ( menu_id=9 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0003s ]
+
+[ 2017-12-23T21:20:52+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+NOTIC: [2] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/MenuModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0036s ]
+SQL: UPDATE `cms_menu` SET `listorder`='9' WHERE ( menu_id=6 ) [ RunTime:0.0013s ]
+SQL: UPDATE `cms_menu` SET `listorder`='4' WHERE ( menu_id=9 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0002s ]
+
+[ 2017-12-23T21:21:54+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+NOTIC: [2] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/MenuModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+SQL: UPDATE `cms_menu` SET `listorder`='9' WHERE ( menu_id=6 ) [ RunTime:0.0015s ]
+SQL: UPDATE `cms_menu` SET `listorder`='4' WHERE ( menu_id=9 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0004s ]
+
+[ 2017-12-23T22:30:03+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+NOTIC: [2] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined index: menu_id /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 30 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/MenuModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0044s ]
+SQL: INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`) VALUES ('xxx','1','xxxxxxx','xx','xx','1') [ RunTime:0.0019s ]
+
+[ 2017-12-23T22:30:12+08:00 ] ::1 /admin.php?c=menu&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+NOTIC: [2] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/MenuModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0028s ]
+SQL: UPDATE `cms_menu` SET `status`='-1' WHERE ( menu_id=17 ) [ RunTime:0.0005s ]
+
+[ 2017-12-23T22:31:09+08:00 ] ::1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004049s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0042s ]
+SQL: UPDATE `cms_news` SET `status`='0' WHERE ( news_id=24 ) [ RunTime:0.0007s ]
+
+[ 2017-12-23T22:31:14+08:00 ] ::1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0039s ]
+SQL: UPDATE `cms_news` SET `status`='1' WHERE ( news_id=24 ) [ RunTime:0.0005s ]
+

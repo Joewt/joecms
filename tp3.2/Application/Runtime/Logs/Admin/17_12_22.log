@@ -1,0 +1,45 @@
+[ 2017-12-22T00:38:13+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0046s ]
+SQL: UPDATE `cms_news` SET `title`='fsdafasdf',`small_title`='dgdgag',`thumb`='/upload/2017/12/22/5a3be3733ecd2.jpg',`title_font_color`='#ed568b',`catid`='3',`copyfrom`='1',`description`='dsfsdfff',`keywords`='aaaa' WHERE ( news_id=27 ) [ RunTime:0.0022s ]
+NOTIC: [2] Declaration of Common\Model\NewsContentModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsContentModel.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0041s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsContentModel.class.php 第 33 行.
+SQL: UPDATE `cms_news_content` SET `content`='&lt;p&gt;
+	esfgdgdsfg
+&lt;/p&gt;
+&lt;p&gt;
+	f
+&lt;/p&gt;' WHERE ( news_id=27 ) [ RunTime:0.0015s ]
+
+[ 2017-12-22T00:38:26+08:00 ] ::1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0040s ]
+SQL: UPDATE `cms_news` SET `status`='1' WHERE ( news_id=19 ) [ RunTime:0.0005s ]
+
+[ 2017-12-22T00:38:32+08:00 ] ::1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0042s ]
+SQL: UPDATE `cms_news` SET `status`='-1' WHERE ( news_id=19 ) [ RunTime:0.0006s ]
+
+[ 2017-12-22T16:08:54+08:00 ] ::1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003032s ]
+
+[ 2017-12-22T22:34:36+08:00 ] ::1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0003s ]
+

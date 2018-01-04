@@ -1,0 +1,126 @@
+[ 2017-12-31T15:37:10+08:00 ] ::1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1514705830' WHERE ( admin_id=1 ) [ RunTime:0.0004s ]
+
+[ 2017-12-31T15:39:04+08:00 ] ::1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004259s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1514705943' WHERE ( admin_id=1 ) [ RunTime:0.0004s ]
+
+[ 2017-12-31T15:42:15+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+NOTIC: [2] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/Desktop/joecms/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/Desktop/joecms/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: news_id /Users/joe/Desktop/joecms/Application/Admin/Controller/ContentController.class.php 第 69 行.
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0047s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('这是标题','这是短标题','/upload/2017/12/31/5a48948c2c33b.jpg','#5674ed','8','1','这是描述','这是关键字','1514706135','admin') [ RunTime:0.0030s ]
+NOTIC: [2] Declaration of Common\Model\NewsContentModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/NewsContentModel.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0049s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('&lt;p&gt;
+	这是内容
+&lt;/p&gt;
+&lt;p&gt;
+	这是内容
+&lt;/p&gt;
+&lt;p&gt;
+	这是内容
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src=&quot;/upload/2017/12/31/5a4894b28ad4f.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;/p&gt;','30','1514706135') [ RunTime:0.0025s ]
+
+[ 2017-12-31T16:10:56+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004391s ]
+NOTIC: [2] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/Desktop/joecms/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/Desktop/joecms/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0082s ]
+SQL: UPDATE `cms_news` SET `title`='这是标题-1',`small_title`='这是短标题',`thumb`='/upload/2017/12/31/5a48948c2c33b.jpg',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='1',`description`='这是描述',`keywords`='这是关键字' WHERE ( news_id=30 ) [ RunTime:0.0043s ]
+NOTIC: [2] Declaration of Common\Model\NewsContentModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/NewsContentModel.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0056s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' /Users/joe/Desktop/joecms/Application/Common/Model/NewsContentModel.class.php 第 35 行.
+SQL: UPDATE `cms_news_content` SET `content`='&lt;p&gt;
+	这是内容
+&lt;/p&gt;
+&lt;p&gt;
+	这是内容
+&lt;/p&gt;
+&lt;p&gt;
+	这是内容
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src=&quot;/upload/2017/12/31/5a4894b28ad4f.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;/p&gt;' WHERE ( news_id=30 ) [ RunTime:0.0022s ]
+
+[ 2017-12-31T16:35:23+08:00 ] ::1 /admin.php?c=positioncontent&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001710s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/Desktop/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 17 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/Desktop/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 17 行.
+NOTIC: [8] Undefined index: id /Users/joe/Desktop/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 70 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/PositionContentModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0052s ]
+NOTIC: [8] Undefined index: create_time /Users/joe/Desktop/joecms/Application/Common/Model/PositionContentModel.class.php 第 44 行.
+SQL: INSERT INTO `cms_position_content` (`title`,`position_id`,`thumb`,`url`,`news_id`,`status`,`create_time`) VALUES ('湖南工学院oj','2','/upload/2017/12/31/5a48a13def9b5.jpg','http://www.hnitoj.cn','0','1','1514709323') [ RunTime:0.0073s ]
+
+[ 2017-12-31T16:39:02+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+NOTIC: [2] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/Desktop/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/Desktop/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/MenuModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0044s ]
+SQL: UPDATE `cms_menu` SET `listorder`='9' WHERE ( menu_id=6 ) [ RunTime:0.0020s ]
+SQL: UPDATE `cms_menu` SET `listorder`='4' WHERE ( menu_id=9 ) [ RunTime:0.0006s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0008s ]
+
+[ 2017-12-31T16:43:25+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001939s ]
+NOTIC: [2] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/Desktop/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/Desktop/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/MenuModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0047s ]
+SQL: UPDATE `cms_menu` SET `listorder`='9' WHERE ( menu_id=6 ) [ RunTime:0.0019s ]
+SQL: UPDATE `cms_menu` SET `listorder`='4' WHERE ( menu_id=9 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0004s ]
+
+[ 2017-12-31T16:48:52+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+NOTIC: [2] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/Desktop/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/Desktop/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/MenuModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+SQL: UPDATE `cms_menu` SET `listorder`='9' WHERE ( menu_id=6 ) [ RunTime:0.0016s ]
+SQL: UPDATE `cms_menu` SET `listorder`='4' WHERE ( menu_id=9 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0004s ]
+
+[ 2017-12-31T16:49:27+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+NOTIC: [2] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/Desktop/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/Desktop/joecms/Application/Admin/Controller/MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/Desktop/joecms/Application/Common/Model/MenuModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0042s ]
+SQL: UPDATE `cms_menu` SET `listorder`='9' WHERE ( menu_id=6 ) [ RunTime:0.0016s ]
+SQL: UPDATE `cms_menu` SET `listorder`='4' WHERE ( menu_id=9 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0003s ]
+

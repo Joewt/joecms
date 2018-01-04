@@ -1,0 +1,16 @@
+[ 2018-01-01T10:49:36+08:00 ] ::1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1514774976' WHERE ( admin_id=1 ) [ RunTime:0.0015s ]
+
+[ 2018-01-01T13:48:17+08:00 ] ::1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004703s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0052s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1514785697' WHERE ( admin_id=1 ) [ RunTime:0.0208s ]
+

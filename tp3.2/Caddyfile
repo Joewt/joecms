@@ -1,0 +1,13 @@
+localhost:8889   # Your site's address
+log ../access.log
+ext .html   # Clean URLs
+errors error.log {       # Error log
+    404 error-404.html   # Custom error page
+}
+
+root ./
+fastcgi / localhost:9000 php
+    
+# PHP backend
+
+# API load balancer

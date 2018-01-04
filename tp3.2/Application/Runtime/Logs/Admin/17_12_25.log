@@ -1,0 +1,109 @@
+[ 2017-12-25T19:57:39+08:00 ] ::1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0055s ]
+
+[ 2017-12-25T19:58:17+08:00 ] ::1 /admin.php?c=basic&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/BasicModel.class.php 第 15 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/BasicModel.class.php 第 15 行.
+
+[ 2017-12-25T20:08:57+08:00 ] ::1 /admin.php?c=positioncontent&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 17 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 17 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/PositionContentModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0030s ]
+SQL: UPDATE `cms_position_content` SET `status`='-1' WHERE ( id=34 ) [ RunTime:0.0031s ]
+
+[ 2017-12-25T20:18:13+08:00 ] ::1 /admin.php?c=positioncontent&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 17 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 17 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/PositionContentModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0029s ]
+SQL: UPDATE `cms_position_content` SET `status`='-1' WHERE ( id=28 ) [ RunTime:0.0004s ]
+
+[ 2017-12-25T20:18:30+08:00 ] ::1 /admin.php?c=positioncontent&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 17 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 17 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/PositionContentModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0041s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/PositionContentModel.class.php 第 54 行.
+SQL: UPDATE `cms_position_content` SET `title`='重庆美女球迷争芳斗艳',`position_id`='2',`thumb`='/upload/2016/03/13/56e51cbd34470.png',`url`='',`news_id`='23',`status`='1' WHERE ( id=35 ) [ RunTime:0.0008s ]
+
+[ 2017-12-25T20:19:14+08:00 ] ::1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-25T20:19:38+08:00 ] ::1 /admin.php?c=positioncontent&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 17 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 17 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/PositionContentModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0040s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/PositionContentModel.class.php 第 54 行.
+SQL: UPDATE `cms_position_content` SET `title`='重庆美女球迷争芳斗艳',`position_id`='2',`thumb`='/upload/2017/12/25/5a40ecd83bf79.jpg',`url`='',`news_id`='23',`status`='1' WHERE ( id=35 ) [ RunTime:0.0005s ]
+
+[ 2017-12-25T20:22:03+08:00 ] ::1 /admin.php?c=positioncontent&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 17 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 17 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/PositionContentModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0039s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/PositionContentModel.class.php 第 54 行.
+SQL: UPDATE `cms_position_content` SET `title`='李克强让部长们当第一新闻发言人',`position_id`='3',`thumb`='/upload/2017/12/25/5a40ed69690ac.jpg',`url`='',`news_id`='22',`status`='1' WHERE ( id=29 ) [ RunTime:0.0004s ]
+
+[ 2017-12-25T21:10:27+08:00 ] ::1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-25T21:10:50+08:00 ] ::1 /admin.php?c=positioncontent&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 17 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Users/joe/PhpstormProjects/ks/joecms/Application/Admin/Controller/PositioncontentController.class.php 第 17 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/PositionContentModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0042s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' /Users/joe/PhpstormProjects/ks/joecms/Application/Common/Model/PositionContentModel.class.php 第 54 行.
+SQL: UPDATE `cms_position_content` SET `title`='singwa老师教您如何学PHP',`position_id`='5',`thumb`='/upload/2017/12/25/5a40f8d8cfc3a.jpg',`url`='http://t.imooc.com/space/teacher/id/255838',`news_id`='0',`status`='1' WHERE ( id=33 ) [ RunTime:0.0014s ]
+
+[ 2017-12-25T22:07:54+08:00 ] ::1 /admin.php?c=content
+ERR: Think\Model:getNewCount方法不存在！
+
+[ 2017-12-25T22:14:42+08:00 ] ::1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-25T23:04:08+08:00 ] ::1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0006s ]
+

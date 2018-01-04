@@ -1,0 +1,39 @@
+[ 2017-12-25T20:05:22+08:00 ] ::1 /index.php?c=cat&id=12
+ERR: 无法加载控制器:Cat
+
+[ 2017-12-25T20:17:37+08:00 ] ::1 /
+ERR: Think\Controller:getRank方法不存在！
+
+[ 2017-12-25T20:18:48+08:00 ] ::1 /index.php?c=detail&id=23
+ERR: 无法加载控制器:Detail
+
+[ 2017-12-25T20:57:25+08:00 ] ::1 /index.php?c=detail&id=23
+ERR: 无法加载控制器:Detail
+
+[ 2017-12-25T20:57:29+08:00 ] ::1 /index.php?c=detail&id=22
+ERR: 无法加载控制器:Detail
+
+[ 2017-12-25T21:06:43+08:00 ] ::1 /
+ERR: Think\Controller:getRank方法不存在！
+
+[ 2017-12-25T21:07:45+08:00 ] ::1 /index.php?c=detail&id=24
+ERR: 无法加载控制器:Detail
+
+[ 2017-12-25T21:08:09+08:00 ] ::1 /index.php?c=detail&id=22
+ERR: 无法加载控制器:Detail
+
+[ 2017-12-25T21:38:13+08:00 ] ::1 /index.php?c=detail&id=22
+ERR: 无法加载控制器:Detail
+
+[ 2017-12-25T21:38:21+08:00 ] ::1 /index.php?c=index$a=error
+ERR: 无法加载控制器:Index$a=error
+
+[ 2017-12-25T21:41:40+08:00 ] ::1 /index.php?c=cat&id=3
+ERR: Think\Model:getNewsCount方法不存在！
+
+[ 2017-12-25T21:43:18+08:00 ] ::1 /index.php?c=cat&id=8
+ERR: Think\Model:getNewsCount方法不存在！
+
+[ 2017-12-25T21:45:09+08:00 ] ::1 /index.php?c=sfsdfsd
+ERR: 无法加载控制器:Sfsdfsd
+

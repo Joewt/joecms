@@ -1,0 +1,44 @@
+<?php
+    $config=D("Basic")->select();
+    $navs = D("Menu")->getBarMenus();
+?>
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="">
+    <title>cms</title>
+    <link rel="stylesheet" href="/Public/layui/css/layui.css">
+    <link rel="stylesheet" href="/Public/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="/Public/css/home/main.css" type="text/css" />
+    <script type="text/javascript" src="/Public/layui/layui.all.js"></script>
+</head>
+
+<body>
+   
+    <ul class="layui-nav" lay-filter="">
+
+    <li class="layui-nav-item">
+        <a href="/"<if condition="$result['catId'] eq 0">class="layui-nav-item layui-this"</if>>首页</a>
+    </li>
+    <foreach name="navs" item="vo">
+        <li class="layui-nav-item">
+            <a href="/index.php?c=cat&id={$vo.menu_id}" <if condition="$vo['menu_id'] eq $result['catId']">class="layui-nav-item layui-this"</if>>{$vo.name}</a>
+        </li>
+    </foreach>
+
+    </ul>
+    
+    <script>
+        //注意：导航 依赖 element 模块，否则无法进行功能性操作
+        layui.use('element', function () {
+            var element = layui.element;
+
+            //…
+        });
+    </script>
+</body>
+
+</html>

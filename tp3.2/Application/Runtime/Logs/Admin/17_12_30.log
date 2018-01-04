@@ -1,0 +1,16 @@
+[ 2017-12-30T22:20:38+08:00 ] ::1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-12-30T22:53:10+08:00 ] ::1 /admin.php
+ERR: Think\Model:getLastLoginUsers方法不存在！
+
+[ 2017-12-30T22:53:16+08:00 ] ::1 /admin.php
+ERR: Think\Model:getLastLoginUsers方法不存在！
+
+[ 2017-12-30T22:53:19+08:00 ] ::1 /admin.php
+ERR: Think\Model:getLastLoginUsers方法不存在！
+
