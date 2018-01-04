@@ -1,0 +1,16 @@
+{
+  "name":"JOE_PHP",
+  "description":"this is php_framework",
+  "type":"Framework",
+  "Keywords":[
+    "PHP","PHP Framework"
+  ],
+  "require":{
+    "php":">=7.*",
+    "filp/whoops":"*",
+    "symfony/var-dumper":"*",
+    "catfan/medoo":"*",
+    "twig/twig":"*",
+    "league/plates": "3.*"
+  }
+}
